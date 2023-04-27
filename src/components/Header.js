@@ -13,12 +13,12 @@ const Header = () => {
         <Container className='container d-flex justify-content-between'>
               <Logo src='/asset/images/logo.png' />
               <NavMenu show={burger} className={burger}>
-                  <NavLink className='ms-4'>Home</NavLink>
-                  <NavLink className='ms-4'>about us</NavLink>
-                  <NavLink className='ms-4'>projects</NavLink>
-                  <NavLink className='ms-4'>services</NavLink>
-                  <NavLink className='ms-4'>shop</NavLink>
-                  <IconsHeader className='d-flex justify-content-center align-items-center'>
+                  <NavLink className='ms-lg-4 my-2'>Home</NavLink>
+                  <NavLink className='ms-lg-4 my-2'>about us</NavLink>
+                  <NavLink className='ms-lg-4 my-2'>projects</NavLink>
+                  <NavLink className='ms-lg-4 my-2'>services</NavLink>
+                  <NavLink className='ms-lg-4 my-2'>shop</NavLink>
+                  <IconsHeader className='d-lg-flex d-none justify-content-center align-items-center'>
                     <NavLink><FaDribbble/></NavLink>
                     <NavLink><FaBehance/></NavLink>
                     <NavLink><FaInstagram/></NavLink>
@@ -37,6 +37,7 @@ export default Header;
 
 const Content = styled.div`
   position: relative;
+  padding: 0 15px;
   z-index: 1;
 `
 const Container = styled.div`
@@ -49,18 +50,18 @@ const NavMenu = styled.div`
   align-items: center;
   @media(max-width: 768px) {
     display: flex;
-    padding: 50px 0;
     position: absolute;
+    padding: 50px 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     top: 100%;
     left: 0;
     width: 100%;
     height: auto;
+    transition: transform ease-in-out .3s;
     background-color: rgb(253,94,14);
     z-index: 2;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: transform ease-in-out .3s;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
     display: flex;
