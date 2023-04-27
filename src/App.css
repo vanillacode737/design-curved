@@ -19,6 +19,12 @@ a {
   margin-left: 10px;
 }
 @media(max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    padding: 0 15px;
+  }
   /* ******* Header */
   .transform100 {
     transform: translate(100%); 

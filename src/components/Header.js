@@ -9,7 +9,7 @@ const Header = () => {
   const [ burger, setBurger ] = useState('transform100');
   return (
     <>
-      <Content className='bg-dark'>
+      <Content>
         <Container className='container d-flex justify-content-between'>
               <Logo src='/asset/images/logo.png' />
               <NavMenu show={burger} className={burger}>
