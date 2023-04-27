@@ -21,7 +21,7 @@ a {
 @media(max-width: 768px) {
   /* ******* Header */
   .transform100 {
-    transform: translate(100%);
+    transform: translate(100%); 
   }
   .transform0 {
     transform: translate(0);
