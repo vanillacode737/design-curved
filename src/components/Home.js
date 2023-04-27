@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components';
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import GroupButton from './ui/GroupButton';
 import { FaArrowDown } from "react-icons/fa";
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
                 <HomeTitle className='text-white'>
                     We Create Brands, Websites And Application for you.
                 </HomeTitle>
-                <HomeSubtitle className='text-white'>
+                <HomeSubtitle className='text-white text-center'>
                     Modern designand development services are offered by our digital firm for businessses of all sizes.
                 </HomeSubtitle>
                 <ButtonArea className='d-flex justify-content-center align-items-center'>
