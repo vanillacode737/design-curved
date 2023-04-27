@@ -39,7 +39,7 @@ const HomeTitle = styled.h1`
     text-align: center;
     font-size: 60px;
     @media(max-width: 768px) {
-        font-size: 30px;
+        font-size: 40px;
     }
 `
 const HomeSubtitle = styled.p`
