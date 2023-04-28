@@ -8,7 +8,7 @@ html,body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 17px;
-  background-color: #000 !important;
+  background-color: rgb(14,15,30) !important;
   color: #fff;
 }
 a {
@@ -18,7 +18,8 @@ a {
 .rightArrow {
   margin-left: 10px;
 }
-@media(max-width: 768px) {
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
   body {
     font-size: 14px;
   }
@@ -33,6 +34,22 @@ a {
     transform: translate(0);
   }
 }
+    
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    font-size: 14px;
+  }
+  /* ******* Header */
+  .transform100 {
+    transform: translate(100%); 
+  }
+  .transform0 {
+    transform: translate(0);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* ******* Header */
   .transform100 {

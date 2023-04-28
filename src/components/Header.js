@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../App.css';
 import styled from 'styled-components';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { FaDribbble } from "react-icons/fa";
@@ -13,11 +14,11 @@ const Header = () => {
         <Container className='container d-flex justify-content-between'>
               <Logo src='/asset/images/logo.png' />
               <NavMenu show={burger} className={burger}>
-                  <NavLink className='ms-lg-4 my-2'>Home</NavLink>
-                  <NavLink className='ms-lg-4 my-2'>about us</NavLink>
-                  <NavLink className='ms-lg-4 my-2'>projects</NavLink>
-                  <NavLink className='ms-lg-4 my-2'>services</NavLink>
-                  <NavLink className='ms-lg-4 my-2'>shop</NavLink>
+                  <NavLink className='ms-lg-4 ms-0 my-2'>Home</NavLink>
+                  <NavLink className='ms-lg-4 ms-0 my-2'>about us</NavLink>
+                  <NavLink className='ms-lg-4 ms-0 my-2'>projects</NavLink>
+                  <NavLink className='ms-lg-4 ms-0 my-2'>services</NavLink>
+                  <NavLink className='ms-lg-4 ms-0 my-2'>shop</NavLink>
                   <IconsHeader className='d-lg-flex d-none justify-content-center align-items-center'>
                     <NavLink><FaDribbble/></NavLink>
                     <NavLink><FaBehance/></NavLink>
@@ -48,7 +49,25 @@ const NavMenu = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  @media(max-width: 768px) {
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    display: flex;
+    position: absolute;
+    padding: 50px 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transition: transform ease-in-out .3s;
+    background-color: rgb(253,94,14);
+    z-index: 2;
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) {
     display: flex;
     position: absolute;
     padding: 50px 0;
@@ -89,8 +108,25 @@ const NavLink = styled.a`
   &:hover {
     color: rgb(253,94,14);
   }
-  @media(max-width: 768px) {
-    margin-left: 0;
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    font-size: 14px;
+    &:hover {
+      color: #fff;
+    }
+  }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 14px;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 14px;
     &:hover {
       color: #fff;
     }

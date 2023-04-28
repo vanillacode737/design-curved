@@ -8,10 +8,10 @@ const Home = () => {
     <>
         <Content>
             <Container className='container'>
-                <HomeTitle className='text-white'>
+                <HomeTitle className='px-sm-0 px-4 text-white'>
                     We Create Brands, Websites And Application for you.
                 </HomeTitle>
-                <HomeSubtitle className='text-white text-center'>
+                <HomeSubtitle className='px-3 text-white text-center'>
                     Modern designand development services are offered by our digital firm for businessses of all sizes.
                 </HomeSubtitle>
                 <ButtonArea className='d-flex justify-content-center align-items-center'>
@@ -38,12 +38,40 @@ const Container = styled.div`
 const HomeTitle = styled.h1`
     text-align: center;
     font-size: 60px;
-    @media(max-width: 768px) {
+    // Extra small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {
+        font-size: 30px;
+    }
+    
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) and (max-width: 767.98px) {
         font-size: 40px;
     }
+    
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        font-size: 50PX;
+        0px;
+    }
+
 `
 const HomeSubtitle = styled.p`
     margin: 20px 0;
+    // Extra small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {
+        font-size: 14px;
+    }
+    
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        font-size: 14px;
+
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) and (max-width: 991.98px) {
+
+    }
 `
 const ButtonArea = styled.div`
     gap: 10px;
@@ -53,4 +81,20 @@ const RightButton = styled.div`
     border-radius: 40px;
     color: rgb(253,94,14);
     cursor: pointer;
+    // Extra small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 `
