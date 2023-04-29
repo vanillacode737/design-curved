@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import '../App.css';
 import styled from 'styled-components';
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { FaDribbble } from "react-icons/fa";
 import { FaBehance } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -44,7 +42,17 @@ const Content = styled.div`
 const Container = styled.div`
   padding: 10px 0;
 `
-const Logo = styled.img``
+const Logo = styled.img`
+// Extra small devices (portrait phones, less than 576px)
+  @media(max-width: 575.98px) {
+    width: 75px;
+  }
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) {
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+  }
+`
 const NavMenu = styled.div`
   display: flex;
   justify-content: flex-end;

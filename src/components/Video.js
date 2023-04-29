@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components';
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 const Video = () => {
     return (
@@ -17,24 +16,23 @@ const Video = () => {
 export default Video;
 
 const Container = styled.div`
-    padding: 30px 0;
+    padding: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     // Extra small devices (portrait phones, less than 576px)
     @media (max-width: 575.98px) {
-        padding: 0 15px;
+        padding: 10px 0;
     }
     
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) and (max-width: 767.98px) {
-        padding: 0 15px;
-
+        padding: 0;
     }
-
+    
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) and (max-width: 991.98px) {
-
+        padding: 10px 0;
     }
 `
 
@@ -58,8 +56,8 @@ const ImgArea = styled.div`
     }
     // Extra small devices (portrait phones, less than 576px)
     @media (max-width: 575.98px) {
-        width: 250px;
-        height: 200px;
+        max-width: 400px;
+        max-height: 200px;
     }
     
     // Small devices (landscape phones, 576px and up)
@@ -67,10 +65,11 @@ const ImgArea = styled.div`
         width: 450px;
         height: 300px;
     }
-
+    
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) and (max-width: 991.98px) {
-
+        width: 800px;
+        height: 400px;
     }
 `
 const VideoImg = styled.img`

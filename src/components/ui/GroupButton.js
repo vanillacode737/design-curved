@@ -12,14 +12,15 @@ const GroupButton = ({leftButton}) => {
 
 export default GroupButton;
 const LeftButton = styled.a`
-  padding: 20px;
+  padding: 20px 40px;
   border-radius: 40px;
+  font-size: 16px;
   background-image: linear-gradient(to right, rgb(254,22,15), rgb(253,94,14));
   cursor: pointer;
   // Extra small devices (portrait phones, less than 576px)
   @media (max-width: 575.98px) {
-    padding: 10px 20px;
-    font-size: 14px;
+    padding: 5px 10px;
+    font-size: 9px;
   }
 
   // Small devices (landscape phones, 576px and up)
