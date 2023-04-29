@@ -19,8 +19,8 @@ const LeftButton = styled.a`
   cursor: pointer;
   // Extra small devices (portrait phones, less than 576px)
   @media (max-width: 575.98px) {
-    padding: 5px 10px;
-    font-size: 9px;
+    padding: 10px 15px;
+        font-size: 11px;
   }
 
   // Small devices (landscape phones, 576px and up)
