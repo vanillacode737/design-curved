@@ -6,19 +6,19 @@ const Banner = () => {
         <Container className='container'>
             <BannerText className='text-white'>Endoursed by both well-known companies and growing business.</BannerText>
             <BannerImgArea className='row justify-content-center align-items-center'>
-                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-3'>
+                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-6'>
                     <BannerImg src='/asset/images/ad1.png'/>
                 </BannerImgItem>
-                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-3'>
+                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-6'>
                     <BannerImg src='/asset/images/ad2.png'/>
                 </BannerImgItem>
-                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-3'>
+                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-6'>
                     <BannerImg src='/asset/images/ad3.png'/>
                 </BannerImgItem>
-                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-3'>
+                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-6'>
                     <BannerImg src='/asset/images/ad4.png'/>
                 </BannerImgItem>
-                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 offset-sm-0 col-3'>
+                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-6'>
                     <BannerImg src='/asset/images/ad5.png'/>
                 </BannerImgItem>
             </BannerImgArea>
@@ -30,7 +30,7 @@ const Banner = () => {
 export default Banner;
 
 const Container = styled.div`
-    padding: 33px 0 120px;
+    padding: 33px 15px 120px;
     // Extra small devices (portrait phones, less than 576px)
     @media (max-width: 575.98px) {
         padding: 20px 0;
