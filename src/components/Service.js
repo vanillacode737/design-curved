@@ -6,12 +6,16 @@ const Service = () => {
     <>
         <Container className='container'>
             <ServiceHeader className='row'>
-                <ServiceHeading className='col-lg-6 col-12 text-center'>
-                    We're a fill-service digital agency.
-                </ServiceHeading>
-                <ServiceSubHeading className='col-lg-6 col-12 text-center'>
-                    At Design Curved, we specialize in bringing even the wildest ideas to life by transforming them into elegant designs, exceptional experiences and memorable brands.
-                </ServiceSubHeading>
+                <div className='col-lg-6 col-12'>
+                    <ServiceHeading className='text-center'>
+                        We're a fill-service digital agency.
+                    </ServiceHeading>
+                </div>
+                <div className='col-lg-6 col-12'>
+                    <ServiceSubHeading className='text-center'>
+                        At Design Curved, we specialize in bringing even the wildest ideas to life by transforming them into elegant designs, exceptional experiences and memorable brands.
+                    </ServiceSubHeading>
+                </div>
             </ServiceHeader>
             <ServiceBody>
                 <ServiceLayout 
@@ -56,12 +60,10 @@ const ServiceHeading = styled.h2`
     @media (max-width: 575.98px) {
         font-size: 15px;
     }
-    
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) and (max-width: 767.98px) {
         font-size: 22px;
     }
-    
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) and (max-width: 991.98px) {
         font-size: 22px;
@@ -73,11 +75,9 @@ const ServiceSubHeading = styled.p`
     @media (max-width: 575.98px) {
         font-size: 11px;
     }
-    
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) and (max-width: 767.98px) {
     }
-
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) and (max-width: 991.98px) {
     }
@@ -89,17 +89,20 @@ const ServiceBody = styled.div`
     gap: 24px;
     // Extra small devices (portrait phones, less than 576px)
     @media (max-width: 575.98px) {
+        margin-top: 10px;
         grid-template-columns: repeat(2, 2fr);
-        gap: 10px;
+        gap: 15px;
     }
-    
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) and (max-width: 767.98px) {
-        grid-template-columns: repeat(1, 1fr);
+        margin-top: 10px;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 15px;
     }
-
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) and (max-width: 991.98px) {
-
+        margin-top: 10px;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 15px;
     }
 `

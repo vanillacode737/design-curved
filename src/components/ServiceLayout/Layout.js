@@ -29,11 +29,14 @@ const ServiceItems = styled.div`
     
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) and (max-width: 767.98px) {
+        border-radius: 10px;
         padding: 20px;
     }
-
+    
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) and (max-width: 991.98px) {
+        border-radius: 10px;
+        padding: 20px;
     }
 `
 const ServiceLogo = styled.img`
@@ -81,15 +84,17 @@ const ServiceSubTitle = styled.h5`
     // Extra small devices (portrait phones, less than 576px)
     @media (max-width: 575.98px) {
         margin-bottom: 5px;
-        font-size: 7px;
+        font-size: 11px;
     }
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) and (max-width: 767.98px) {
         margin-bottom: 10px;
-        font-size: 11px;
+        font-size: 12px;
     }
-
+    
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) and (max-width: 991.98px) {
+        margin-bottom: 10px;
+        font-size: 12px;
     }
 `
