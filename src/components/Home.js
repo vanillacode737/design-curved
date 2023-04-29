@@ -69,8 +69,8 @@ const HomeSubtitle = styled.p`
     margin: 50px 0 33px;
     // Extra small devices (portrait phones, less than 576px)
     @media (max-width: 575.98px) {
-        margin: 20px 0;
-        font-size: 10px;
+        margin: 10px 0 15px;
+        font-size: 11px;
     }
     
     // Small devices (landscape phones, 576px and up)
