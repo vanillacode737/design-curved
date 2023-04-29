@@ -6,19 +6,19 @@ const Banner = () => {
         <Container className='container'>
             <BannerText className='text-white'>Endoursed by both well-known companies and growing business.</BannerText>
             <BannerImgArea className='row justify-content-center align-items-center'>
-                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-4'>
+                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-3'>
                     <BannerImg src='/asset/images/ad1.png'/>
                 </BannerImgItem>
-                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-4'>
+                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-3'>
                     <BannerImg src='/asset/images/ad2.png'/>
                 </BannerImgItem>
-                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-4'>
+                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-3'>
                     <BannerImg src='/asset/images/ad3.png'/>
                 </BannerImgItem>
-                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-4'>
+                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-3'>
                     <BannerImg src='/asset/images/ad4.png'/>
                 </BannerImgItem>
-                <BannerImgItem className='col-lg-2 offset-lg-0 col-md-3 offset-md-0 col-sm-3 offset-sm-0 offset-1 col-4'>
+                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 offset-sm-0 col-3'>
                     <BannerImg src='/asset/images/ad5.png'/>
                 </BannerImgItem>
             </BannerImgArea>
