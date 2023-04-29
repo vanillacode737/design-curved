@@ -88,7 +88,7 @@ const NavMenu = styled.div`
     height: auto;
     transition: transform ease-in-out .3s;
     background-color: rgb(253,94,14);
-    z-index: 2;
+    z-index: 9999;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
     display: flex;
@@ -118,7 +118,7 @@ const NavLink = styled.a`
   }
   // Extra small devices (portrait phones, less than 576px)
   @media (max-width: 575.98px) {
-    font-size: 14px;
+    font-size: 12px;
     &:hover {
       color: #fff;
     }

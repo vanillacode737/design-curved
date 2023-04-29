@@ -62,8 +62,8 @@ const ImgArea = styled.div`
     
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) and (max-width: 767.98px) {
-        width: 450px;
-        height: 300px;
+        width: 400px;
+        height: 150px;
     }
     
     // Medium devices (tablets, 768px and up)
