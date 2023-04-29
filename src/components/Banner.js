@@ -33,7 +33,7 @@ const Container = styled.div`
     padding: 33px 15px 120px;
     // Extra small devices (portrait phones, less than 576px)
     @media (max-width: 575.98px) {
-        padding: 20px 0;
+        padding: 20px 15px;
     }
     
     // Small devices (landscape phones, 576px and up)
