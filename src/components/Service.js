@@ -54,7 +54,7 @@ const ServiceHeading = styled.h2`
     color: #fff;
     // Extra small devices (portrait phones, less than 576px)
     @media (max-width: 575.98px) {
-        font-size: 18px;
+        font-size: 15px;
     }
     
     // Small devices (landscape phones, 576px and up)
