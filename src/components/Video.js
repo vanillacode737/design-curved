@@ -56,8 +56,8 @@ const ImgArea = styled.div`
     }
     // Extra small devices (portrait phones, less than 576px)
     @media (max-width: 575.98px) {
-        max-width: 400px;
-        max-height: 200px;
+        width: 250px;
+        height: 150px;
     }
     
     // Small devices (landscape phones, 576px and up)
