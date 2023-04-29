@@ -71,7 +71,7 @@ const NavMenu = styled.div`
     height: auto;
     transition: transform ease-in-out .3s;
     background-color: rgb(253,94,14);
-    z-index: 2;
+    z-index: 99999;
   }
 
   // Small devices (landscape phones, 576px and up)

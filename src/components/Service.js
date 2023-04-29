@@ -54,22 +54,24 @@ const ServiceHeading = styled.h2`
     color: #fff;
     // Extra small devices (portrait phones, less than 576px)
     @media (max-width: 575.98px) {
-        font-size: 22px;
+        font-size: 18px;
     }
     
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) and (max-width: 767.98px) {
+        font-size: 22px;
     }
-
+    
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) and (max-width: 991.98px) {
+        font-size: 22px;
     }
 `
 const ServiceSubHeading = styled.p`
     color: #fff;
     // Extra small devices (portrait phones, less than 576px)
     @media (max-width: 575.98px) {
-        font-size: 8px;
+        font-size: 11px;
     }
     
     // Small devices (landscape phones, 576px and up)
@@ -82,6 +84,7 @@ const ServiceSubHeading = styled.p`
 `
 const ServiceBody = styled.div`
     display: grid;
+    margin-top: 50px;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     // Extra small devices (portrait phones, less than 576px)

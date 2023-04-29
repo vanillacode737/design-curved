@@ -22,12 +22,12 @@ const Container = styled.div`
     align-items: center;
     // Extra small devices (portrait phones, less than 576px)
     @media (max-width: 575.98px) {
-        padding: 10px 0;
+        padding: 20px 0;
     }
     
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) and (max-width: 767.98px) {
-        padding: 0;
+        padding: 20px 0;
     }
     
     // Medium devices (tablets, 768px and up)
@@ -63,7 +63,7 @@ const ImgArea = styled.div`
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) and (max-width: 767.98px) {
         width: 400px;
-        height: 150px;
+        height: 250px;
     }
     
     // Medium devices (tablets, 768px and up)

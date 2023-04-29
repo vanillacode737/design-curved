@@ -5,12 +5,22 @@ const Banner = () => {
     <>
         <Container className='container'>
             <BannerText className='text-white'>Endoursed by both well-known companies and growing business.</BannerText>
-            <BannerImgArea className='d-flex justify-content-center align-items-center'>
-                <BannerImg src='/asset/images/ad1.png'/>
-                <BannerImg src='/asset/images/ad2.png'/>
-                <BannerImg src='/asset/images/ad3.png'/>
-                <BannerImg src='/asset/images/ad4.png'/>
-                <BannerImg src='/asset/images/ad5.png'/>
+            <BannerImgArea className='row justify-content-center align-items-center'>
+                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-4'>
+                    <BannerImg src='/asset/images/ad1.png'/>
+                </BannerImgItem>
+                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-4'>
+                    <BannerImg src='/asset/images/ad2.png'/>
+                </BannerImgItem>
+                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-4'>
+                    <BannerImg src='/asset/images/ad3.png'/>
+                </BannerImgItem>
+                <BannerImgItem className='col-lg-2 col-md-3 col-sm-3 col-4'>
+                    <BannerImg src='/asset/images/ad4.png'/>
+                </BannerImgItem>
+                <BannerImgItem className='col-lg-2 offset-lg-0 col-md-3 offset-md-0 col-sm-3 offset-sm-0 offset-1 col-4'>
+                    <BannerImg src='/asset/images/ad5.png'/>
+                </BannerImgItem>
             </BannerImgArea>
         </Container>
     </>
@@ -23,7 +33,7 @@ const Container = styled.div`
     padding: 33px 0 120px;
     // Extra small devices (portrait phones, less than 576px)
     @media (max-width: 575.98px) {
-        padding: 20px 15px;
+        padding: 20px 0;
     }
     
     // Small devices (landscape phones, 576px and up)
@@ -61,24 +71,38 @@ const BannerText = styled.div`
 `
 
 const BannerImgArea = styled.div`
-    gap: 20px;
+`
+const BannerImgItem = styled.div`
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    gap: 5px;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
 `
 
 const BannerImg = styled.img`
-    width: 15%;
+    object-fit: cover;
+    width: 100%;
     // Extra small devices (portrait phones, less than 576px)
     @media (max-width: 575.98px) {
         font-size: 14px;
+        width: 100%;
     }
-
+    
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) and (max-width: 767.98px) {
-        
+        width: 100%;
     }
 
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) and (max-width: 991.98px) {
         margin-bottom: 10px;
-        width: 20%;
     }
 `
