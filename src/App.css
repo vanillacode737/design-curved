@@ -1,24 +1,30 @@
 /* ***************************
       GOOGLE FONTS(FIRA SANS)
 *************************** */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html,body {
+html,
+body {
   overflow-x: hidden;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   font-size: 17px;
-  background-color: rgb(14,15,30) !important;
+  background-color: rgb(14, 15, 30) !important;
   color: #fff;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
-	line-height: 0;
+  line-height: 0;
 }
 a {
   text-decoration: none !important;
@@ -41,13 +47,13 @@ p {
   }
   /* ******* Header */
   .transform100 {
-    transform: translate(100%); 
+    transform: translate(100%);
   }
   .transform0 {
     transform: translate(0);
   }
 }
-    
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   body {
@@ -55,7 +61,7 @@ p {
   }
   /* ******* Header */
   .transform100 {
-    transform: translate(100%); 
+    transform: translate(100%);
   }
   .transform0 {
     transform: translate(0);
